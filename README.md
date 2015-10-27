@@ -12,12 +12,13 @@ This library works with the Haxe cpp target only.
 
 `haxelib git linc_glew https://github.com/snowkit/linc_glew.git`
 
-If you run into build errors first try:
-
-- Get the path of the library `haxelib path linc_glew`
-- Change directory to that path `cd <path to linc_glew>`
-- `git submodule update --init`
-
 ### Example usage
 
-See test/Test.hx
+```haxe
+
+var result = GLEW.init();
+if(result != GLEW.OK) {
+    trace(GLEW.error(result));
+}
+
+```
