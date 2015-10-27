@@ -15,6 +15,9 @@ This library works with the Haxe cpp target only.
 ### Example usage
 
 ```haxe
+import glew.GLEW;
+
+...
 
 var result = GLEW.init();
 if(result != GLEW.OK) {
