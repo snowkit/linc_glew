@@ -12,6 +12,10 @@ This library works with the Haxe cpp target only.
 
 `haxelib git linc_glew https://github.com/snowkit/linc_glew.git`
 
+### License
+
+See LICENSE.md
+
 ### OpenGL + GLEW
 
 For a full OpenGL API with GLEW available, see https://github.com/snowkit/linc_opengl
