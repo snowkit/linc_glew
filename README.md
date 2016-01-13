@@ -12,6 +12,10 @@ This library works with the Haxe cpp target only.
 
 `haxelib git linc_glew https://github.com/snowkit/linc_glew.git`
 
+### OpenGL + GLEW
+
+For a full OpenGL API with GLEW available, see https://github.com/snowkit/linc_opengl
+
 ### Example usage
 
 ```haxe
@@ -21,7 +25,7 @@ import glew.GLEW;
 
 var result = GLEW.init();
 if(result != GLEW.OK) {
-    trace(GLEW.error(result));
+    throw 'Failed to initialize GLEW:' + GLEW.error(result);
 }
 
 ```
